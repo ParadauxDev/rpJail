@@ -1,0 +1,38 @@
+database-connection:
+  address: "127.0.0.1:3306"
+  database-name: "Jail"
+  table-prefix: "rpJail_"
+  db-user: "root"
+  db-pass: ''
+
+defaults:
+  lapCount: 3
+  reason: "Misconduct"
+
+# Valid Placeholders:
+# %user% - Player who was jailed
+# %reason% - Specified Reason / Default Reason defined above.
+# %jailer% - Person who performed the /jail command.
+# Full PlaceholderAPI can be made available upon request.
+
+# Jail History has the following placeholders.
+# %historic_user%
+# %historic_jailer%
+# %historic_reason%
+
+# Toggle some features.
+features:
+  scoreboard: false
+
+
+
+# Leave empty for disabled.
+formatting:
+  jailMessage: "%user% has been jailed for %reason% by %jailer%"
+  jailBroadcast: ""
+  jailHistory-banner: "| ---- Jail History: %user% ---- | "
+  jailHistory-row: "%historic_user% was jailed by %historic_jailer% for %historic_reason%"
+  jailHistory-banner-final: "| ---- Jail History: rpJail  ---- |"
+
+debug:
+  config-version: 1.0
