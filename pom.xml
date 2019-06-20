@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>co.paradaux.rp</groupId>
-    <artifactId>Jail</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>rpJail</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,6 +34,11 @@
             <id>egg82-ninja</id>
             <url>https://www.myget.org/F/egg82-java/maven/</url>
         </repository>
+
+        <repository>
+            <id>sk89q-repo</id>
+            <url>>http://maven.sk89q.com/repo/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -60,6 +65,13 @@
             <groupId>ninja.egg82</groupId>
             <artifactId>easy-sql</artifactId>
             <version>1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <version>6.1.4</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

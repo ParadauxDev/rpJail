@@ -1,5 +1,6 @@
 package co.paradaux.rp.Jail.events;
 
+import com.sk89q.worldedit.bukkit.WorldEditPlugin;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;

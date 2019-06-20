@@ -20,15 +20,18 @@ defaults:
 # %historic_jailer%
 # %historic_reason%
 
-# Toggle some features.
-features:
-  scoreboard: false
+scoreboard:
 
+  # This cannot be more than 32 characters long INCLUDING the colorcodes.
+  header: "&7-= [ &8U&7mbr&8a&bMC&r &7] =-"
 
+  # These two cannot be longer than 16 characters long INCLUDING the colorcodes.
+  laps-remaining-prefix: "&cLaps Left: "
+  laps-remaining-color: "&7"
 
 # Leave empty for disabled.
 formatting:
-  jailMessage: "%user% has been jailed for %reason% by %jailer%"
+  jailMessage: "%user% has been jailed for %reason%."
   jailBroadcast: ""
   jailHistory-banner: "| ---- Jail History: %user% ---- | "
   jailHistory-row: "%historic_user% was jailed by %historic_jailer% for %historic_reason%"

@@ -1,0 +1,17 @@
+main: co.paradaux.rp.Jail.RPJail
+name: rpJail
+version: 1.0.0
+author: ParadauxDev
+database: true
+commands:
+  jail:
+    description: Done something wrong? Well, now you have to pay for it!
+    usage: /jail {username} {# of laps} {reason}
+    permission: rpjail.jail
+  jailhistory:
+    description: Check if this user has been jailed before and for what reason(s)
+    usage: /jailhistory {username}
+    permission: rpjail.jailhistory
+  rpjail:
+    description: Information regarding rpJail. A plugin by ParadauxDev
+    usage: /rpjail <version, credits>
